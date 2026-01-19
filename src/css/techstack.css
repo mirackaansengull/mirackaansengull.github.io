@@ -1,0 +1,80 @@
+.techstack-section {
+  padding: 6rem 1.5rem;
+}
+
+.techstack-container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.techstack-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--foreground, #ffffff);
+}
+
+.techstack-heading-number {
+  color: var(--primary, #B0D4FF);
+  font-family: 'Courier New', monospace;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.techstack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .techstack-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .techstack-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.techstack-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.techstack-card:hover {
+  border-color: rgba(176, 212, 255, 0.5);
+  transform: translateY(-5px) scale(1.05);
+}
+
+.techstack-icon {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.techstack-card:hover .techstack-icon {
+  transform: scale(1.1);
+}
+
+.techstack-name {
+  color: var(--foreground, #ffffff);
+  font-weight: 500;
+  text-align: center;
+}
+
+.techstack-category {
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.7));
+  font-size: 0.75rem;
+  font-family: 'Courier New', monospace;
+}

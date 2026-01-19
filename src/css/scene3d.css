@@ -1,0 +1,25 @@
+.scene3d-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.scene3d-background {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 150% 100% at top right, rgba(30, 60, 100, 1) 0%, rgba(20, 45, 80, 0.7) 20%, rgba(10, 25, 50, 0.3) 50%, transparent 80%),
+    radial-gradient(ellipse 150% 100% at bottom left, rgba(30, 60, 100, 1) 0%, rgba(20, 45, 80, 0.7) 20%, rgba(10, 25, 50, 0.3) 50%, transparent 80%);
+}
+
+.scene3d-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.175 ;
+  background-image: 
+    linear-gradient(to right, rgba(176, 212, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(176, 212, 255, 0.1) 1px, transparent 1px);
+  background-size: 60px 60px;
+}

@@ -1,0 +1,151 @@
+.projects-section {
+  padding: 6rem 1.5rem;
+}
+
+.projects-container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--foreground, #ffffff);
+}
+
+.projects-heading-number {
+  color: var(--primary, #B0D4FF);
+  font-family: 'Courier New', monospace;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  position: relative;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  border-color: rgba(176, 212, 255, 0.5);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .project-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.project-main {
+  flex: 1;
+}
+
+.project-label {
+  color: var(--primary, #B0D4FF);
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground, #ffffff);
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--primary, #B0D4FF);
+}
+
+.project-description {
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.7));
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--secondary, rgba(255, 255, 255, 0.05));
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-family: 'Courier New', monospace;
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.7));
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.7));
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--primary, #B0D4FF);
+}
+
+.project-divider {
+  display: none;
+  width: 1px;
+  height: 8rem;
+  background: var(--border, rgba(255, 255, 255, 0.1));
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .project-divider {
+    display: block;
+  }
+}
+
+.project-number {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+}
+
+@media (min-width: 768px) {
+  .project-number {
+    display: flex;
+  }
+}
+
+.project-number-text {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: rgba(176, 212, 255, 0.2);
+  font-family: 'Courier New', monospace;
+}

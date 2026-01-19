@@ -1,0 +1,55 @@
+import { motion } from 'framer-motion';
+import '../css/Navbar.css';
+
+const navItems = [
+  { name: 'Hakkımda', href: '#about' },
+  { name: 'Teknolojiler', href: '#tech' },
+  { name: 'Projeler', href: '#projects' },
+  { name: 'İletişim', href: '#contact' },
+];
+
+export default function Navbar() {
+  return (
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="navbar"
+    >
+      <div className="navbar-container">
+        <motion.a
+          href="#"
+          className="navbar-logo"
+          whileHover={{ scale: 1.05 }}
+        >
+          <span>{'<'}</span>
+          <span className="logo-spacing">{'MKS/>'}</span>
+        </motion.a>
+
+        <ul className="navbar-menu">
+          {navItems.map((item, index) => (
+            <motion.li
+              key={item.name}
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 * (index + 1), duration: 0.4 }}
+            >
+              <a href={item.href} className="nav-link">
+                {item.name}
+              </a>
+            </motion.li>
+          ))}
+        </ul>
+
+        <motion.a
+          href="#contact"
+          className="navbar-contact-button"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          İletişime Geç
+        </motion.a>
+      </div>
+    </motion.nav>
+  );
+}
