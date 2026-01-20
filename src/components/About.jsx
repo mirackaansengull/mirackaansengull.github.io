@@ -26,8 +26,7 @@ export default function AboutSection() {
           >
             <p>
               Merhaba! Ben Miraç, web geliştirme ve yazılım mühendisliği konusunda
-              tutkulu bir geliştiriciyim. Kariyerim boyunca, startup'lardan büyük
-              şirketlere kadar çeşitli projelerde yer aldım.
+              tutkulu bir geliştiriciyim. 
             </p>
             <p>
               Modern web teknolojileri ile kullanıcı odaklı, performanslı ve
@@ -50,7 +49,7 @@ export default function AboutSection() {
             <div className="about-image-container">
               <div className="about-image-overlay" />
               <div className="about-image-placeholder">
-                <span>👨‍💻</span>
+                <img src="/public/profile.png" alt="Miraç Kaan Şengül" />
               </div>
             </div>
             <div className="about-image-border" />

@@ -118,7 +118,7 @@ function WaveSpheres() {
     color: '#B0D4FF',
     size: 0.018, // Nokta boyutu
     transparent: true,
-    opacity: 0.165,
+    opacity: 0.145,
     sizeAttenuation: true,
     depthWrite: false,
   }), []);

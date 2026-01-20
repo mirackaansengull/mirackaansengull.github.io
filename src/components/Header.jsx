@@ -34,7 +34,7 @@ export default function HeroSection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="hero-description"
           >
-            Modern web teknolojileri ile etkileyici ve kullanıcı dostu dijital deneyimler yaratıyorum. Her projede inovasyon ve kaliteyi bir araya getirerek, markaların dijital dünyada öne çıkmasını sağlıyorum.
+            Modern web ve mobil teknolojileri ile kullanıcı dostu dijital deneyimler yaratıyorum. Her projede inovasyon ve kaliteyi bir araya getirerek, markaların dijital dünyada öne çıkmasını sağlıyorum.
           </motion.p>
 
           <motion.div

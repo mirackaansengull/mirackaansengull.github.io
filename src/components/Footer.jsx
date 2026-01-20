@@ -13,11 +13,11 @@ export default function Footer() {
         <p className="footer-text">
           Designed & Built by{' '}
           <span className="footer-link">
-            Furkan Yılmaz
+            Miraç Kaan Şengül
           </span>
         </p>
         <p className="footer-copyright">
-          © 2024 Tüm hakları saklıdır.
+          © 2026 Tüm hakları saklıdır.
         </p>
       </motion.div>
     </footer>
