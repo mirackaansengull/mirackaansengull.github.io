@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 import '../css/Contact.css';
 
 const socialLinks = [
-  { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Mail, href: 'mailto:hello@example.com', label: 'Email' },
+  { icon: Github, href: 'https://github.com/mirackaansengull', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/mira%C3%A7-kaan-%C5%9Feng%C3%BCl-8560232a8/', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:mirac.kaansengull@gmail.com', label: 'Email' },
 ];
 
 export default function Contact() {
@@ -68,6 +67,8 @@ export default function Contact() {
             <motion.a
               key={social.label}
               href={social.href}
+              target={social.href.startsWith('http') ? '_blank' : undefined}
+              rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="contact-social-link"
               whileHover={{ scale: 1.1, y: -3 }}
               aria-label={social.label}

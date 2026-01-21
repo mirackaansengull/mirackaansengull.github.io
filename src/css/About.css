@@ -1,5 +1,11 @@
 .about-section {
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 480px) {
+  .about-section {
+    padding: 3rem 1.5rem;
+  }
 }
 
 .about-container {
@@ -8,10 +14,17 @@
 }
 
 .about-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: var(--foreground, #ffffff);
+}
+
+@media (min-width: 768px) {
+  .about-heading {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .about-heading-number {

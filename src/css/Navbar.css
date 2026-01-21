@@ -47,6 +47,35 @@
 @media (min-width: 768px) {
   .navbar-menu {
     display: flex;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    backdrop-filter: none;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+/* Mobil menü */
+@media (max-width: 767px) {
+  .navbar-menu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(1, 12, 30, 0.98);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 40;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+
+  .navbar-menu-open {
+    display: flex;
   }
 }
 
@@ -108,4 +137,38 @@
 
 .navbar-contact-button:hover {
   background: rgba(176, 212, 255, 0.1);
+}
+
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--primary, #B0D4FF);
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 60;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggle:hover {
+  color: rgba(176, 212, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* Küçük ekranlar için navbar padding */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.125rem;
+  }
 }

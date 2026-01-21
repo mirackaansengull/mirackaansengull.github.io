@@ -83,7 +83,7 @@ export default function HeroSection() {
             </motion.a>
             
             <motion.a
-              href="https://linkedin.com/in/mirackaansengull"
+              href="https://www.linkedin.com/in/mira%C3%A7-kaan-%C5%9Feng%C3%BCl-8560232a8/"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-link"
@@ -106,29 +106,6 @@ export default function HeroSection() {
               <span>Email</span>
             </motion.a>
             
-            <motion.a
-              href="https://twitter.com/mirackaansengull"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-social-link"
-              whileHover={{ scale: 1.1, x: 5 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label="Twitter"
-            >
-              <Twitter size={24} />
-              <span>Twitter</span>
-            </motion.a>
-            
-            <motion.a
-              href="#projects"
-              className="hero-social-link"
-              whileHover={{ scale: 1.1, x: 5 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label="Portfolio"
-            >
-              <ExternalLink size={24} />
-              <span>Portfolio</span>
-            </motion.a>
           </motion.div>
         </div>
       </div>

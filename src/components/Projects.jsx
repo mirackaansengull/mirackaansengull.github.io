@@ -4,29 +4,38 @@ import '../css/Projects.css';
 
 const projects = [
   {
-    title: 'E-Ticaret Platformu',
-    description: 'Modern bir e-ticaret platformu. React, Node.js ve PostgreSQL kullanılarak geliştirildi. Stripe entegrasyonu, gerçek zamanlı stok takibi ve admin paneli içerir.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redis'],
-    github: '#',
-    live: '#',
+    title: 'Anticogold',
+    description: 'Kapsamlı e-kuyumcu platformu. Flutter ile geliştirilen mobil uygulama ve Go tabanlı backend altyapısı ile çoklu kullanıcı rolleri desteklenmektedir. Admin, Toptancı, Bayi ve Müşteri olmak üzere 4 farklı giriş yolu ile her kullanıcı tipine özel arayüz ve işlevsellik sunulmaktadır. PayTR ödeme entegrasyonu ve Brinks kargo entegrasyonu ile tam entegre bir e-ticaret deneyimi sağlanmaktadır.',
+    tech: ['Flutter', 'Go', 'MongoDB', 'Firebase','Render'],
+    github: null,
+    live: 'https://play.google.com/store/search?q=anticogold&c=apps&hl=tr',
     featured: true,
   },
   {
-    title: 'Proje Yönetim Aracı',
-    description: 'Ekipler için Kanban tabanlı proje yönetim uygulaması. Drag-and-drop özelliği, gerçek zamanlı güncellemeler ve detaylı raporlama.',
-    tech: ['Next.js', 'JavaScript', 'Prisma', 'Socket.io'],
-    github: '#',
-    live: '#',
+    title: 'Eventra',
+    description: 'Lisans tezi projesi. Türkiye\'deki 9 farklı etkinlik kategorisindeki işletmeleri tek bir platformda toplayan kapsamlı uygulama. Her işletme için detaylı bilgiler sunulmaktadır: Google Maps entegrasyonu ile yol tarifleri ve konum bilgisi, fiyat bilgileri, Google Maps puanları ve yorumları, işletme detayları ve iletişim bilgileri. Kullanıcılar kategorilere göre filtreleme yapabilir, işletmeleri harita üzerinde görüntüleyebilir ve detaylı bilgilere erişebilir.',
+    tech: ['Flutter', 'Google Maps API', 'Google Places API','Go','MongoDB','Render',],
+    github: 'https://github.com/mirackaansengull/eventra',
+    live: null,
     featured: true,
   },
   {
-    title: 'AI Chatbot Platformu',
-    description: 'GPT-4 tabanlı akıllı müşteri hizmetleri chatbot\'u. Doğal dil işleme ve öğrenme yetenekleri ile müşteri deneyimini iyileştirir.',
-    tech: ['Python', 'FastAPI', 'OpenAI', 'React', 'MongoDB'],
-    github: '#',
-    live: '#',
+    title: 'Lokanta/Cafe Takip Sistemi',
+    description: 'Restoran ve kafeler için dijital sipariş takip sistemi. Müşteriler online menü üzerinden kendi masalarına sipariş verebilir ve takip edebilir. Kullanıcı dostu arayüz ile hızlı ve kolay sipariş verme deneyimi sunar. Web sitesi prototipi olarak geliştirilmiş, PHP backend ve MSSQL veritabanı ile güçlendirilmiştir.',
+    tech: ['PHP', 'JavaScript', 'HTML5', 'CSS3', 'MSSQL'],
+    github: 'https://github.com/mirackaansengull/Lokanta-Cafe-Takip-Sistemi',
+    live: null,
     featured: true,
   },
+  {
+    title: 'Akıllı Kampüs Sağlık ve Güvenlik Bildirim Uygulaması',
+    description: 'Kampüs içerisindeki sağlık ve güvenlik olaylarının yönetilmesi için geliştirilen mobil uygulama. Kotlin ile MVVM mimarisi kullanılarak geliştirildi, Jetpack Compose ile modern UI tasarımı. Go backend ile RESTful API servisi, Firebase Authentication ve Firestore entegrasyonu. GPS tabanlı konum desteği ile Google Maps üzerinde olayların harita üzerinde görüntülenmesi. Bildirim takip sistemi, tür bazlı filtreleme, admin paneli ile durum yönetimi ve Brevo ile e-posta bildirimleri. Render platformunda deploy edilmiş, ölçeklenebilir bir sistem.',
+    tech: ['Kotlin', 'Go', 'Firebase', 'Google Maps', 'Jetpack Compose','Render'],
+    github: 'https://github.com/mirackaansengull/mobilprogramlama',
+    live: null,
+    featured: true,
+  },
+  
 ];
 
 const containerVariants = {
@@ -94,20 +103,26 @@ export default function Projects() {
                     ))}
                   </div>
                   <div className="project-links">
-                    <motion.a
-                      href={project.github}
-                      className="project-link"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <Github size={22} />
-                    </motion.a>
-                    <motion.a
-                      href={project.live}
-                      className="project-link"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <ExternalLink size={22} />
-                    </motion.a>
+                    {project.github && (
+                      <motion.a
+                        href={project.github}
+                        className="project-link"
+                        whileHover={{ scale: 1.1 }}
+                      >
+                        <Github size={22} />
+                      </motion.a>
+                    )}
+                    {project.live && (
+                      <motion.a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        whileHover={{ scale: 1.1 }}
+                      >
+                        <ExternalLink size={22} />
+                      </motion.a>
+                    )}
                   </div>
                 </div>
                 <div className="project-divider" />

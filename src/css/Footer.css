@@ -1,6 +1,12 @@
 .footer {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   border-top: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+}
+
+@media (min-width: 480px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .footer-container {

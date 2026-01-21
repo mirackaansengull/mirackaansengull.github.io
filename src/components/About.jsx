@@ -49,7 +49,14 @@ export default function AboutSection() {
             <div className="about-image-container">
               <div className="about-image-overlay" />
               <div className="about-image-placeholder">
-                <img src="/public/profile.png" alt="Miraç Kaan Şengül" />
+                <img 
+                  src="/profile.png" 
+                  alt="Miraç Kaan Şengül" 
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.textContent = 'MK';
+                  }}
+                />
               </div>
             </div>
             <div className="about-image-border" />

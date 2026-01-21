@@ -5,56 +5,56 @@ const techCategories = [
   {
     title: 'Programming Languages',
     technologies: [
-      { name: 'C', icon: 'C' },
-      { name: 'C++', icon: 'C++' },
-      { name: 'Python', icon: '🐍' },
-      { name: 'JavaScript', icon: 'JS' },
-      { name: 'Kotlin', icon: 'K' },
+      { name: 'C', iconId: 'c' },
+      { name: 'C++', iconId: 'cpp' },
+      { name: 'Python', iconId: 'python' },
+      { name: 'JavaScript', iconId: 'js' },
+      { name: 'Dart', iconId: 'dart' },
     ],
   },
   {
     title: 'Backend Development',
     technologies: [
-      { name: 'Go', icon: 'Go' },
-      { name: 'Node.js', icon: 'Node' },
-      { name: 'PHP', icon: 'PHP' },
+      { name: 'Go', iconId: 'go' },
+      { name: 'Node.js', iconId: 'nodejs' },
+      { name: 'PHP', iconId: 'php' },
     ],
   },
   {
     title: 'Frontend Development',
     technologies: [
-      { name: 'HTML5', icon: 'HTML5' },
-      { name: 'CSS3', icon: 'CSS3' },
-      { name: 'React', icon: '⚛️' },
-      { name: 'Tailwind CSS', icon: 'TW' },
+      { name: 'HTML5', iconId: 'html' },
+      { name: 'CSS3', iconId: 'css' },
+      { name: 'React', iconId: 'react' },
+      { name: 'Tailwind CSS', iconId: 'tailwind' },
     ],
   },
   {
     title: 'Mobile Development',
     technologies: [
-      { name: 'Flutter', icon: 'Flutter' },
-      { name: 'React Native', icon: 'RN' },
+      { name: 'Flutter', iconId: 'flutter' },
+      { name: 'React Native', iconId: 'react' },
     ],
   },
   {
     title: 'Database & Cloud',
     technologies: [
-      { name: 'MySQL', icon: '🐬' },
-      { name: 'PostgreSQL', icon: '🐘' },
-      { name: 'MongoDB', icon: '🍃' },
-      { name: 'Firebase', icon: '🔥' },
-      { name: 'AWS', icon: '☁️' },
+      { name: 'MySQL', iconId: 'mysql' },
+      { name: 'PostgreSQL', iconId: 'postgresql' },
+      { name: 'MongoDB', iconId: 'mongodb' },
+      { name: 'Firebase', iconId: 'firebase' },
+      { name: 'AWS', iconId: 'aws' },
     ],
   },
   {
     title: 'Tools, Design & OS',
     technologies: [
-      { name: 'Git', icon: 'Git' },
-      { name: 'Linux', icon: '🐧' },
-      { name: 'Figma', icon: 'Figma' },
-      { name: 'Blender', icon: 'Blender' },
-      { name: 'Unreal Engine', icon: 'UE' },
-      { name: 'Adobe Photoshop', icon: 'PS' },
+      { name: 'Git', iconId: 'git' },
+      { name: 'Linux', iconId: 'linux' },
+      { name: 'Figma', iconId: 'figma' },
+      { name: 'Blender', iconId: 'blender' },
+      { name: 'Unreal Engine', iconId: 'unreal' },
+      { name: 'Postman', iconId: 'postman' },
     ],
   },
 ];
@@ -115,6 +115,11 @@ export default function TechStack() {
                     className="techstack-card"
                     title={tech.name}
                   >
+                    <img
+                      src={`https://skillicons.dev/icons?i=${tech.iconId}&theme=dark`}
+                      alt={tech.name}
+                      className="techstack-icon"
+                    />
                   </motion.div>
                 ))}
               </motion.div>
