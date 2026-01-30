@@ -35,7 +35,14 @@ const projects = [
     live: null,
     featured: true,
   },
-  
+  {
+    title: 'Kalori Hesaplama Uygulaması',
+    description: 'Yapay zeka destekli yemek fotoğrafı analiz ederek kalori ve besin değerlerini hesaplayan Flutter uygulaması. Kamera veya galeriden yemek fotoğrafı seçme, Google Gemini AI ile otomatik yemek tanıma, yemekteki malzemeleri tespit etme, her malzemenin kalori ve protein değerlerini hesaplama ve toplam besin değerlerini gösterme. Android, iOS, web ve masaüstü platformlarında çalışan modern ve kullanıcı dostu arayüz.',
+    tech: ['Flutter', 'Dart', 'Google Gemini AI', 'Image Picker'],
+    github: 'https://github.com/mirackaansengull/calorie-calculator-app',
+    live: null,
+    featured: true,
+  },
 ];
 
 const containerVariants = {
