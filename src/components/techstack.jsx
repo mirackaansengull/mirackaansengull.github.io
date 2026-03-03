@@ -3,16 +3,6 @@ import '../css/techstack.css';
 
 const techCategories = [
   {
-    title: 'Programming Languages',
-    technologies: [
-      { name: 'C', iconId: 'c' },
-      { name: 'C++', iconId: 'cpp' },
-      { name: 'Python', iconId: 'python' },
-      { name: 'JavaScript', iconId: 'js' },
-      { name: 'Dart', iconId: 'dart' },
-    ],
-  },
-  {
     title: 'Backend Development',
     technologies: [
       { name: 'Go', iconId: 'go' },
@@ -23,8 +13,6 @@ const techCategories = [
   {
     title: 'Frontend Development',
     technologies: [
-      { name: 'HTML5', iconId: 'html' },
-      { name: 'CSS3', iconId: 'css' },
       { name: 'React', iconId: 'react' },
       { name: 'Tailwind CSS', iconId: 'tailwind' },
     ],

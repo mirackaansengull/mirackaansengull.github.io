@@ -16,52 +16,40 @@ export default function AboutSection() {
           Hakkımda
         </motion.h2>
 
-        <div className="about-grid">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-            className="about-text"
-          >
-            <p>
-              Merhaba! Ben Miraç, web geliştirme ve yazılım mühendisliği konusunda
-              tutkulu bir geliştiriciyim. 
-            </p>
-            <p>
-              Modern web teknolojileri ile kullanıcı odaklı, performanslı ve
-              ölçeklenebilir uygulamalar geliştirmek benim uzmanlık alanım.
-              Temiz kod yazmayı ve sürdürülebilir mimari tasarlamayı önemsiyorum.
-            </p>
-            <p>
-              Şu anda freelance projeler üzerinde çalışıyor ve yeni teknolojileri
-              keşfetmeye devam ediyorum. İşbirliği fırsatlarına her zaman açığım!
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="about-image-wrapper"
-          >
-            <div className="about-image-container">
-              <div className="about-image-overlay" />
-              <div className="about-image-placeholder">
-                <img 
-                  src="/profile.png" 
-                  alt="Miraç Kaan Şengül" 
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.textContent = 'MK';
-                  }}
-                />
-              </div>
-            </div>
-            <div className="about-image-border" />
-          </motion.div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          className="about-text"
+        >
+          <p>
+            Merhaba! Ben Miraç, Web ve Mobile Full Stack Geliştirici olarak hem web hem de
+            mobil platformlarda uçtan uca çözümler üreten tutkulu bir yazılımcıyım. Teknolojiye
+            olan merakım ve problem çözme yeteneğim sayesinde, farklı platformlarda sorunsuz
+            çalışan, kullanıcı dostu uygulamalar geliştiriyorum.
+          </p>
+          <p>
+            Web tarafında React, Node.js ve Tailwind CSS gibi modern teknolojileri
+            kullanarak performanslı ve ölçeklenebilir uygulamalar oluşturuyorum. Frontend'de
+            kullanıcı deneyimini ön planda tutarken, backend tarafında güvenli ve optimize
+            edilmiş API'ler geliştiriyorum. Veritabanı yönetimi, authentication sistemleri
+            ve cloud servisler konusunda deneyim sahibiyim.
+          </p>
+          <p>
+            Mobil geliştirme tarafında Flutter framework'ü ile iOS ve Android platformları
+            için tek kod tabanından native performansta uygulamalar geliştiriyorum. Dart
+            dilinin gücünü kullanarak, responsive tasarımlar ve akıcı animasyonlar ile
+            kullanıcıları etkileyen mobil deneyimler yaratıyorum. Firebase entegrasyonu,
+            state management ve RESTful API bağlantıları konularında bilgiliyim.
+          </p>
+          <p>
+            Full Stack yaklaşımımla projelerin başından sonuna kadar tüm aşamalarında aktif
+            rol alıyorum. Git versiyon kontrolü  ile profesyonel bir geliştirme süreci yürütüyorum. 
+            Şu anda freelance projeler üzerindeçalışıyor ve yeni teknolojileri keşfetmeye devam ediyorum. 
+            İşbirliği fırsatlarına her zaman açığım!
+          </p>
+        </motion.div>
       </div>
     </section>
   );
