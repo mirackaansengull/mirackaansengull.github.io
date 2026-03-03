@@ -47,7 +47,7 @@ export default function AboutSection() {
             Full Stack yaklaşımımla projelerin başından sonuna kadar tüm aşamalarında aktif
             rol alıyorum. Git versiyon kontrolü  ile profesyonel bir geliştirme süreci yürütüyorum. 
             Şu anda freelance projeler üzerindeçalışıyor ve yeni teknolojileri keşfetmeye devam ediyorum. 
-            İşbirliği fırsatlarına her zaman açığım!
+            İşbirliği fırsatlarına her zaman açığım.
           </p>
         </motion.div>
       </div>
