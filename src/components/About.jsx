@@ -43,12 +43,6 @@ export default function AboutSection() {
             kullanıcıları etkileyen mobil deneyimler yaratıyorum. Firebase entegrasyonu,
             state management ve RESTful API bağlantıları konularında bilgiliyim.
           </p>
-          <p>
-            Full Stack yaklaşımımla projelerin başından sonuna kadar tüm aşamalarında aktif
-            rol alıyorum. Git versiyon kontrolü  ile profesyonel bir geliştirme süreci yürütüyorum. 
-            Şu anda freelance projeler üzerindeçalışıyor ve yeni teknolojileri keşfetmeye devam ediyorum. 
-            İşbirliği fırsatlarına her zaman açığım.
-          </p>
         </motion.div>
       </div>
     </section>

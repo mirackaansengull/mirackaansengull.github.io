@@ -9,27 +9,8 @@
 }
 
 .about-container {
-  max-width: 100%;
+  max-width: 72rem;
   margin: 0 auto;
-  padding: 0 3rem;
-}
-
-@media (min-width: 768px) {
-  .about-container {
-    padding: 0 6rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-container {
-    padding: 0 12rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .about-container {
-    padding: 0 16rem;
-  }
 }
 
 .about-heading {
